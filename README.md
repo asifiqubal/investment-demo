@@ -38,6 +38,6 @@ In the `ios` directory
 
 ## App Screenshot
 
-![Auth](https://github.com/asifiqubal/investment-demo/assets/21161336/3e7b8a9c-12a2-4b2d-bead-747804bda43b)
-![Company List](https://github.com/asifiqubal/investment-demo/assets/21161336/928b5b28-d062-49b0-96d2-35d56135a5f4)
-![Company Details](https://github.com/asifiqubal/investment-demo/assets/21161336/d6c93a80-5c05-484e-9158-2b20d76411c0)
+![Auth](https://github.com/asifiqubal/investment-demo/assets/21161336/28fe1aa9-3a30-47ae-8698-77f06237a1fe)
+![Company List](https://github.com/asifiqubal/investment-demo/assets/21161336/3c286789-6a55-4d8b-91d3-018228fa84be)
+![Company Details](https://github.com/asifiqubal/investment-demo/assets/21161336/33609149-880c-41b5-8c6d-7bdafa0abdd4)

@@ -1,55 +1,43 @@
-# Technical Challenge
+# Seeders: InvestmentDemo
 
-This repo contains a basic react-native app with 3 screens:
+A mobile application built using React Native and [Seeder's dummy](https://developers.themoviedb.org/3) api.
 
-- Sign in
-- Companies List
-- Company Details
+## Installation
 
-To get the project up and running, you will need to run `yarn` and `npx pod-install` (for iOS). You should then be able to run `yarn start` followed by `yarn ios` for iOS or `yarn android` for Android, assuming you have followed the instructions in the [react native documentation](https://reactnative.dev/docs/environment-setup). 
+### Step-1
 
-Once you have the project up and running, you should see some further instructions in each screen in addition to what's in this ReadMe.
+Clone the app repository
 
-## Acceptance criteria
+- `git clone https://github.com/asifiqubal/investment-demo.git`
 
-You will need to build out the app with some very basic functionality. All of the endpoints and details you need can be found in the `config.ts` file.
+### Step-2
 
-A user should not be able to see the list and details screens without first signing in. You will need to manage the auth state globally and render screens conditionally based on whether the user is signed in, storing the API token in global state.
+In the root directory
 
-The data for the list screen comes from a REST API endpoint, and the data for the details screen comes from a GraphQL endpoint. We recommend using the packages that we have pre-installed to fetch the data ([axios](https://axios-http.com/docs/intro) and [graphql-request](https://github.com/jasonkuhrt/graphql-request)), but this is not a requirement.
+- Install dependencies: `yarn install` or `npm install`
 
-Once logged in, you should be able to press on a company from your list screen and see the details on the next screen.
+### Step-3
 
-Note: For the GraphQL API call, you will need to add a header with key `x-api-key` and value of the auth token you got earlier or it will fail. So the headers should look like this:
+- App run
 
-`
-headers: {
-    'x-api-key': 'da2-e5uXXXXXXXX'
-  }`
+### iOS
 
-DON'T try and put it in an `authorization` object or add the value to a `Bearer` key, follow exactly as above 👆.
+In the `ios` directory
 
-You can choose how you wish to display the data - don't worry if design is not your strong point, you won't be judged on that! A logo and a title will do, as long as is reasonably intuitive for the user.
+- Install Pods: `pod install`
+- Launch: `open InvestmentDemo.xcworkspace` with yor xcode
+- Select an emulator from xcode and press run
+- Or you can run the app by using these commands `react-native run-ios / npx react-native run-ios` from the project root directory
 
-Once you have got the basic functionality up and running (you should not need to spend long on this), the rest of it is up to you. You can have a bit of fun with it and demonstrate some of your skills.
+### Android
 
-Here are some ideas for extra stuff you could add:
+- Open `android` directory with Android Studio and sync gradle.
+- Open terminal is root directory run:`react-native run-android / npx react-native run-android`
+- You might need to do this to run it in Android Studio or on real device: `adb reverse tcp:8081 tcp:8081`
+- And for the sample server: `adb reverse tcp:3000 tcp:3000`
 
-- Unit tests
-- Animations
-- Basic E2E tests
-- Deep linking
+## App Screenshot
 
-Basically anything, the important thing is not to spend too long on it and remember you will be going through your code with the Seedrs engineers so you will need to be able to explain what you did and why. So it's not a good idea to copy and paste code you don't understand!
-
-Once you have finished, please push your code to your own GitHub repo (make it public please) so we can take a look. Once we've taken a look, we will ask you to remove the public repo (just so other candidates won't be able to find your code!), but please do keep your code locally as we will want to go through it with you during your interview.
-
-Good luck and we look forward to seeing what you come up with!
-
-<img width="300" alt="S1" src="screenshot1.png">
-
-## Troubleshooting
-
-This project uses the latest version of react native, so if you are struggling to get the project to build, make sure you have followed all of the instructions in the [react native documentation](https://reactnative.dev/docs/environment-setup).
-
-If you have trouble building on iOS via the cli, you may want to try building with XCode instead.
+![Auth](https://github.com/asifiqubal/investment-demo/assets/21161336/3e7b8a9c-12a2-4b2d-bead-747804bda43b)
+![Company List](https://github.com/asifiqubal/investment-demo/assets/21161336/928b5b28-d062-49b0-96d2-35d56135a5f4)
+![Company Details](https://github.com/asifiqubal/investment-demo/assets/21161336/d6c93a80-5c05-484e-9158-2b20d76411c0)

@@ -12,28 +12,20 @@ const StackApp = createNativeStackNavigator<AppStackParamType>();
 
 const AuthStack = () => {
   return (
-    <StackAuth.Navigator initialRouteName="SignIn">
-      <StackAuth.Screen
-        name="SignIn"
-        component={SignInScreen}
-        options={{title: 'Sign In'}}
-      />
+    <StackAuth.Navigator
+      initialRouteName="SignIn"
+      screenOptions={{headerShown: false}}>
+      <StackAuth.Screen name="SignIn" component={SignInScreen} />
     </StackAuth.Navigator>
   );
 };
 const AppStack = () => {
   return (
-    <StackApp.Navigator initialRouteName="CompaniesList">
-      <StackApp.Screen
-        name="CompaniesList"
-        component={CompaniesListScreen}
-        options={{title: 'Companies'}}
-      />
-      <StackApp.Screen
-        name="CompanyDetails"
-        component={CompanyDetailsScreen}
-        options={{title: 'Company Details'}}
-      />
+    <StackApp.Navigator
+      initialRouteName="CompaniesList"
+      screenOptions={{headerShown: false}}>
+      <StackApp.Screen name="CompaniesList" component={CompaniesListScreen} />
+      <StackApp.Screen name="CompanyDetails" component={CompanyDetailsScreen} />
     </StackApp.Navigator>
   );
 };

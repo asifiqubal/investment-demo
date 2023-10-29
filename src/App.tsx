@@ -1,11 +1,14 @@
 import React from 'react';
 import AuthProvider from './context/AuthContext';
+import LoadingProvider from './context/LoadingContext';
 import AppNavigator from './route/Routes';
 
 export const App = () => {
   return (
-    <AuthProvider>
-      <AppNavigator />
-    </AuthProvider>
+    <LoadingProvider>
+      <AuthProvider>
+        <AppNavigator />
+      </AuthProvider>
+    </LoadingProvider>
   );
 };
